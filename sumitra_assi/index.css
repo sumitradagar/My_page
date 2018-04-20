@@ -1,0 +1,274 @@
+:root{
+	font-size: 16px;
+}
+body{
+
+    background: brown;
+    border: 1px solid #3f3f3f;
+    border-radius: 10px;
+	padding: 0;
+	margin: 0;
+}
+.main-class {
+	display: flex;
+	flex-direction: column;
+	margin: 5vh;
+}
+/*First Section*/
+.banner .heading{
+	background: #aaa;
+	border: 1px solid #3f3f3f;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+
+}
+.banner .heading .heading1 {
+	color: #eee;
+    font-family: "Catamaran", serif;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1vh;
+    padding: 5vw;
+    
+
+}
+  h1  {
+	
+	text-align: center;
+}
+
+.banner .heading .heading2 {
+	color: #eee;
+    font-family: "Catamaran", serif;
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 0 5vw 2vw;
+
+}
+
+
+.paragraph {
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.paragraph .my-image {
+	border: 1px solid #eee;
+    border-radius: 5px;
+    box-shadow: 0px 3px 20px 2px #3c3c3c;
+    width: 25vw;
+
+}
+@media only screen and (max-width: 725px) {
+    .paragraph {
+        flex-direction: column;
+    }
+    .paragraph .image {
+        order: -1;
+    }
+    .paragraph .my-image {
+        width: 60vw;
+    
+    }
+}
+
+
+.paragraph .paragraph1 {
+    color: #eee;
+    font-family: "Cormorant ", sans-serif;
+    padding: 5vw 5vw 5vw 0;
+}
+
+/*Second section*/
+
+.Tech {
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5vh;
+}
+.Tech .Tech1 p {
+
+	 color: #eee;
+    font-family: "Cormorant ", sans-serif;
+    padding: 5vw 5vw 5vw 0;
+    margin: 0;
+
+}
+.Tech .Tech1 ul {
+    display: block;
+    margin: 0 auto;
+}
+.Tech .Tech1 ul li {
+    color: #eee;
+display: inline-flex;
+list-style: none;
+padding: 0px 16px;
+
+}
+ul li {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+h3 {
+    text-align: left;
+}
+@media only screen and (max-width: 725px){
+    .Tech {
+        flex-direction: column;
+    }
+    .Tech .Tech1 ul li  {
+        padding: 3vw 3vw 3vw 0;
+    }
+}
+/*Third Section*/
+.profession {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+.profession .profession1 p {
+     color: #eee;
+    font-family: "Cormorant ", sans-serif;
+    padding: 0 5vw 5vw 0;
+
+}
+p {
+color: #eee;
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+@media only screen and (max-width: 725px){
+    .profession {
+        flex-direction: column;
+    }
+    .profession .profession1 p {
+        padding: 0;
+    }
+}
+ /*Fourth section*/
+
+.web-work {
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+}
+.web-work .my-work a {
+    color: #3c3c3c;
+    font-family: "Cormorant ", sans-serif;
+    padding: 0 5vw 5vw 0;
+}
+
+ a {
+  font-family: Catamaran;
+  font-size: 1.6rem;
+  color: #eee;
+  font-weight: 200;
+ 
+}
+@media only screen and (max-width: 725px){
+    .web-work{
+        flex-direction: column;
+    }
+    .web-work .my-work a{
+        padding: 0;
+    }
+}
+
+
+
+nav{
+    width: 100%;
+    background: brown;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+nav h1
+{
+    margin: 0;
+    padding: 15px 20px;
+    float: left;
+}
+nav h1 a
+{
+    color: #fff;
+    text-decoration: none;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+nav ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 20px 30px;
+    transition:.5s;
+}
+nav ul li a
+{
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li :hover
+{
+    background:#f2184f;
+}
+.responsive-bar
+{
+    width: 100%;
+    background: blue;
+padding: 10px 30px;
+box-sizing: border-box;
+display: none;
+}
+.responsive-bar h3  
+{
+    margin: 0;
+    padding: 15px 20px;
+    float: left;
+}
+
+.responsive-bar h3 a
+{
+    color: #fff;
+    text-decoration: none;
+
+}
+.responsive-bar h4
+{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    float: right;
+    padding: 5px 10px;
+    background: #f2184f;
+text-transform: uppercase;
+cursor: pointer;
+}
+@media only screen and (max-width: 748px){
+    nav{
+        display: none;
+    }
+    .responsive-bar{
+display: block;
+    }
+    nav h1{
+        display: block;
+        float: none;
+    }
+    nav ul{
+        float: none;
+        }
+    nav ul li{
+        display: block;
+        text-align: center;
+        background:#141e33;
+    }
+
+}
